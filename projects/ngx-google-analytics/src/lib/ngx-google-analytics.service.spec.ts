@@ -6,7 +6,9 @@ describe('NgxGoogleAnalyticsService', () => {
   let service: NgxGoogleAnalyticsService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [NgxGoogleAnalyticsService]
+    });
     service = TestBed.inject(NgxGoogleAnalyticsService);
   });
 

@@ -1,0 +1,23 @@
+name: test-suite
+run-name: Test Suite
+on: [push]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+        
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm run test
