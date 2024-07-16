@@ -1,6 +1,13 @@
 {
   "name": "@blue-cardinal/ngx-google-analytics",
+  "description": "Google Analytics for Angular",
   "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/blue-cardinal/ngx-google-analytics.git",
+    "directory": "projects/ngx-google-analytics",
+    "type": "git"
+  },
   "peerDependencies": {
     "@angular/common": "^18.1.0",
     "@angular/core": "^18.1.0"
