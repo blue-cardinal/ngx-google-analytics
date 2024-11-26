@@ -11,7 +11,7 @@ updates:
       angular:
         applies-to: version-updates
         patterns:
-          - "@angular*"
+          - "@angular/*"
         update-types:
           - "minor"
           - "patch"
