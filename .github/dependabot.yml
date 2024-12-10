@@ -8,10 +8,20 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 5
     groups:
-      angular:
+      angular-version:
         applies-to: version-updates
         patterns:
-          - "@angular/*"
+          - "@angular*"
         update-types:
           - "minor"
           - "patch"
+      angular-security:
+        applies-to: security-updates
+        patterns:
+          - "@angular*"
+        update-types:
+          - "minor"
+          - "patch"
+    ignore:
+      - dependency-name: "@angular*"
+        update-types: ["version-update:semver-major"]
